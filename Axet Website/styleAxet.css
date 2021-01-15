@@ -36,6 +36,7 @@ button:hover {
 }
 
 header {
+    z-index: 2;
     position: fixed;
     width: 100%;
     height: 46px;
@@ -91,11 +92,12 @@ header {
 }
 
 .main-background {
+    z-index: 1;
     top: 46px;
     position: relative;
     width: 100%;
     height: 666px;
-    background-image: url(./Assets/Pictures/background.png);
+    background-image: url(./AssetsAxet/Pictures/background.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -413,7 +415,7 @@ nav {
     margin-top: 60px;
     width: 100%;
     height: 453px;
-    background-image: url(./Assets/Pictures/section_men-1\ 1.png);
+    background-image: url(./AssetsAxet/Pictures/section_men-1\ 1.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 25px 90px;
@@ -632,7 +634,7 @@ nav {
     top: 46px;
     width: 100%;
     height: 431px;
-    background-image: url(./Assets/Pictures/clouds-daytime-equipment-129544\ 1.png);
+    background-image: url(./AssetsAxet/Pictures/clouds-daytime-equipment-129544\ 1.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -641,9 +643,43 @@ nav {
     width: 100%;
     height: 100%;
     background: rgba(119, 45, 139, 0.2);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+
+.industry-standard-content {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.industry-standard-content h4 { 
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    margin-top: 18px;
+}
+  
+.industry-standard-content h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 154.7%;
+    text-align: center;
+    color: #fff;
+}
+
+.industry-standard-content-video {
+    height: 116px;
+    width: 116px;
+    margin: auto;
+}
+
+.industry-standard-content-video img {
+    height: 100%;
+    width: 100%;
 }
 
 .clients {
@@ -774,4 +810,132 @@ nav {
     color: #FFFFFF;
     text-align: left;
     margin-bottom: 4px;
+}
+
+.our-contacts {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    grid-column-gap: 13px;
+}
+
+.our-contacts p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+  
+.our-contacts-icons {
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+.location {
+    background-image: url("AssetsAxet/Icons/mdi_location_on.svg");
+}
+  
+.phone {
+    background-image: url("AssetsAxet/Icons/mdi_smartphone.svg");
+}
+  
+.mail {
+    background-image: url("AssetsAxet/Icons/mdi_mail.svg");
+}
+
+.last-bar {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 154.7%;
+    text-align: center;
+    background-color: white;
+    color: #474747;
+    top: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .body {
+        width: 100%;
+
+    }
+
+    .nav-right {
+        display: none;
+    }
+    
+    .body-after-nav-right {
+        display: none;
+    }
+
+    .about {
+        display: block;
+        margin: 0;
+    }
+
+    .about-right{
+        width: 100%;
+        margin: 0
+    }
+
+    .services {
+        margin: auto; 
+    }
+
+    .work-flow {
+        margin: auto;
+    }
+
+    .testimonial-bottom {
+        width: 100%;
+    }
+
+    .services-bottom, .work-flow-bottom, .testimonial-bottom, .news-bottom {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+
+    .main-background {
+        width: 100%;
+    }
+
+    .work-flow {
+        
+    }
+
+    .work-flow-rectangle {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+    }
+
+    .work-flow {
+        height: auto;
+        background-size: cover;
+    }
+    
+    .news {
+
+    }
+      
+    .industry-standard {
+
+    }
+
+    .contact-group {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 40px;
+    }
+
+    .contact {
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .news-rectangle {
+        width: 100%;
+        height: 100%;
 }
