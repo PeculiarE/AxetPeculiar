@@ -576,22 +576,12 @@ nav {
     box-sizing: border-box;
 }
 
-.news-rectangle-box {
-    width: 100%;
-    height: 280px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #C4C4C4;
-}
-
-.news-rectangle-box-logo {
+.news-rectangle-logo {
     width: 100%;
     height: 250px;
 }
 
-.news-rectangle-box-logo img {
+.news-rectangle-logo img {
     width: 100%;
     height: 100%;
 }
@@ -648,7 +638,7 @@ nav {
 .industry-standard-content {
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 85px 20px 20px 20px;
     box-sizing: border-box;
     text-align: center;
 }
@@ -818,6 +808,14 @@ nav {
     grid-column-gap: 13px;
 }
 
+.our-contacts-first {
+    margin-top: 19px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #272020;
+}
+
 .our-contacts p {
     font-style: normal;
     font-weight: 300;
@@ -833,6 +831,7 @@ nav {
 }
   
 .location {
+    margin-top: 19px;
     background-image: url("AssetsAxet/Icons/mdi_location_on.svg");
 }
   
@@ -903,10 +902,6 @@ nav {
         width: 100%;
     }
 
-    .work-flow {
-        
-    }
-
     .work-flow-rectangle {
         display: grid;
         grid-template-columns: 0.5fr 1fr;
@@ -916,15 +911,7 @@ nav {
         height: auto;
         background-size: cover;
     }
-    
-    .news {
-
-    }
-      
-    .industry-standard {
-
-    }
-
+          
     .contact-group {
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 40px;
